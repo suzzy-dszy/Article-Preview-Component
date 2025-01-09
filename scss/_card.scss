@@ -1,0 +1,115 @@
+@use 'variables' as *;
+
+.card {
+  background-color: $pc-white;
+  max-width: 23.4375rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+
+  &__content--title {
+    color: $pc-vd-gray-blue;
+    font-size: $fs-md;
+    font-weight: $fw-bold;
+    padding-inline: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__content--text {
+    color: $pc-vd-des-dark-blue;
+    font-size: $fs-base;
+    padding-inline: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__content--author {
+    display: flex;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: 1.5rem;
+    padding-inline: 2rem;
+
+    &-img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      color: $pc-vd-gray-blue;
+      font-weight: $fw-bold;
+    }
+
+    &-publish-date {
+      color: $pc-grayish-blue;
+    }
+  }
+
+  &__content--share {
+    &-button-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      border-radius: 50%;
+      background-color: $pc-light-grayish-blue;
+      cursor: pointer;
+    }
+
+    &-menu {
+      display: flex;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-block-end: 1.5rem;
+      padding-inline: 2rem;
+      background-color: $pc-vd-gray-blue;
+      margin: 0;
+      padding: 1rem 1.5rem;
+    }
+
+    &-text {
+      color: $pc-grayish-blue;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    &-button-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      border-radius: 50%;
+      background-color: $pc-vd-des-dark-blue;
+      cursor: pointer;
+    }
+
+    &-icon-2 {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .active {
+    display: flex;
+    pointer-events: all;
+  }
+}

@@ -1,0 +1,23 @@
+// font url or font-face
+@font-face {
+  font-family: 'Manrope';
+  src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+}
+// colors
+$pc-vd-gray-blue: hsl(217, 19%, 35%);
+$pc-vd-des-dark-blue: hsl(214, 17%, 51%);
+$pc-grayish-blue: hsl(212, 23%, 69%);
+$pc-light-grayish-blue: hsl(210, 46%, 95%);
+$pc-white: hsl(0, 0%, 100%);
+// font family
+$ff-manrope: 'Manrope', sans-serif;
+
+// Font Size
+$fs-sm: 0.75rem; // 12px
+$fs-base: 0.8125rem; // 13px
+$fs-md: 1rem; // 15px
+$fs-lg: 2rem; // 32px
+
+// Font Weight
+$fw-regular: 500;
+$fw-bold: 700;

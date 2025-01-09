@@ -1,0 +1,128 @@
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set default body settings */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Improve font rendering */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: inherit; /* Ensure body inherits default font */
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Anchor tag reset */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Remove default blockquote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* Remove default table borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Image and media reset */
+img,
+picture,
+svg {
+  display: block;
+  max-inline-size: 100%; /* Ensures the width of images doesn't overflow */
+  block-size: auto; /* Adjusts height accordingly */
+}
+
+/* Remove form element borders and background */
+button,
+input,
+textarea,
+select {
+  font: inherit; /* Inherit font settings */
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Set default button styles */
+button {
+  cursor: pointer;
+}
+
+/* Remove default animations and transitions */
+* {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Paragraph and heading word wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; /* Ensures text doesn’t overflow its container */
+}
+
+/* Remove all scrollbar styles */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Remove default list item padding */
+li {
+  padding: 0;
+}
+
+/* Remove outline for focused elements */
+:focus {
+  outline: none;
+}
+
+/* Ensure tables don't overflow */
+table {
+  width: 100%;
+}

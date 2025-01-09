@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
+  <main>
+    <article class="card">
+      <!-- Image -->
+      <div class="card__image">
+        <img src="./images/drawers.jpg" alt="image of drawers" class="card__image--img">
+      </div>
+      <div class="card__content">
+        <!-- Title -->
+        <h1 class="card__content--title">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+        <!-- Text -->
+        <p class="card__content--text">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+        <!-- Author Section -->
+        <div class="card__content--author active">
+          <img src="./images/avatar-michelle.jpg" alt="author's profile picture" class="card__content--author-img">
+          <div class="card__content--author-info">
+            <span class="card__content--author-name">Michelle Appleton</span>
+            <span class="card__content--author-publish-date">28 Jun 2020</span>
+          </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <!-- Author Share Button -->
+          <button class="card__content--share-button-1" onclick="toggleShareMenu()">
+            <img src="./images/icon-share.svg" alt="share" class="card__content--share-icon-1">
+          </button>
+        </div>
+        <!-- Share Section -->
+        <div class="card__content--share-menu ">
+          <span class="card__content--share-text">share</span>
+          <!-- Social links -->
+          <button class="card__content--share-menu-item">
+            <img src="./images/icon-facebook.svg" alt="facebook" class="card__content--share-menu-icon">
+          </button>
+          <button class="card__content--share-menu-item">
+            <img src="./images/icon-twitter.svg" alt="twitter" class="card__content--share-menu-icon">
+          </button>
+          <button class="card__content--share-menu-item">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" class="card__content--share-menu-icon">
+          </button>
+          <!-- Share Section Button -->
+          <button class="card__content--share-button-2" onclick="toggleShareMenu()">
+            <img src="./images/icon-share.svg" alt="share" class="card__content--share-icon-2">
+          </button>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script src="./Javascript/main.js"></script>
 </body>
+
 </html>

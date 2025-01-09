@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set default body settings */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Improve font rendering */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: inherit; /* Ensure body inherits default font */
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Anchor tag reset */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Remove default blockquote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* Remove default table borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Image and media reset */
+img,
+picture,
+svg {
+  display: block;
+  max-inline-size: 100%; /* Ensures the width of images doesn't overflow */
+  block-size: auto; /* Adjusts height accordingly */
+}
+
+/* Remove form element borders and background */
+button,
+input,
+textarea,
+select {
+  font: inherit; /* Inherit font settings */
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Set default button styles */
+button {
+  cursor: pointer;
+}
+
+/* Remove default animations and transitions */
+* {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Paragraph and heading word wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; /* Ensures text doesn’t overflow its container */
+}
+
+/* Remove all scrollbar styles */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Remove default list item padding */
+li {
+  padding: 0;
+}
+
+/* Remove outline for focused elements */
+:focus {
+  outline: none;
+}
+
+/* Ensure tables don't overflow */
+table {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 23.4375rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.card__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2rem;
+}
+.card__content--title {
+  color: hsl(217, 19%, 35%);
+  font-size: 1rem;
+  font-weight: 700;
+  padding-inline: 2rem;
+  margin-bottom: 0.75rem;
+}
+.card__content--text {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.8125rem;
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
+}
+.card__content--author {
+  display: flex;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  padding-inline: 2rem;
+}
+.card__content--author-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.card__content--author-info {
+  display: flex;
+  flex-direction: column;
+}
+.card__content--author-name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.card__content--author-publish-date {
+  color: hsl(212, 23%, 69%);
+}
+.card__content--share-button-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(210, 46%, 95%);
+  cursor: pointer;
+}
+.card__content--share-menu {
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  padding-inline: 2rem;
+  background-color: hsl(217, 19%, 35%);
+  margin: 0;
+  padding: 1rem 1.5rem;
+}
+.card__content--share-text {
+  color: hsl(212, 23%, 69%);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.card__content--share-button-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+.card__content--share-icon-2 {
+  filter: brightness(0) invert(1);
+}
+.card .active {
+  display: flex;
+  pointer-events: all;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 0.75rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
