@@ -13,15 +13,8 @@
 ## Overview
 
 ### Screenshot📸
-
-![](./images/Thumbnail-Mobile.jpeg)
-![](./images/Thumbnail-Desktop.jpeg)
-
-- A screenshot of my final solution ☝️ and their active states 👇;
-
-![](./images/Thumbnail-Mobile-Active.jpeg)
-![](./images/Thumbnail-Desktop-Active.jpeg)
-![](./images/image.png)
+- A screenshot of my final solution and their active states 💯;
+![](./images/screenshot.png)
 
 ## My process
 
