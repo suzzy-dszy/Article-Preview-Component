@@ -5,7 +5,7 @@
 }
 
 @mixin desktop-view {
-  @media screen and (min-width: 90rem) {
+  @media screen and (min-width: 64rem) {
     @content;
   }
 }

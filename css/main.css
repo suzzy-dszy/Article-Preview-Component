@@ -158,7 +158,6 @@ table {
   margin-bottom: 2rem;
 }
 .card__content--author {
-  display: flex;
   display: none;
   align-items: center;
   gap: 1rem;
@@ -231,6 +230,63 @@ table {
   pointer-events: all;
 }
 
+@media screen and (min-width: 64rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 45.625rem;
+  }
+  .card__image {
+    height: 100%;
+  }
+  .card__image--img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card__content {
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+  }
+  .card__content--title, .card__content--text, .card__content--author {
+    padding-inline: 1rem;
+  }
+  .card__content--author {
+    display: flex;
+  }
+  .card__content--share-menu {
+    border-radius: 0.625rem;
+    position: absolute;
+    top: 40%;
+    right: -7.45%;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  .card__content--share-menu::after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #48556a;
+    border-width: 15px;
+    margin-left: -15px;
+  }
+  .card__content--share-button-2 {
+    display: none;
+  }
+  .invert-btn-colour {
+    background-color: hsl(214, 17%, 51%);
+  }
+  .invert-icon-colour {
+    filter: brightness(0) invert(1);
+  }
+}
 body {
   display: flex;
   align-items: center;

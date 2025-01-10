@@ -1,0 +1,70 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@include desktop-view {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 45.625rem;
+
+    &__image {
+      height: 100%;
+      &--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      padding: 2rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 0.5rem;
+
+      &--title,
+      &--text,
+      &--author {
+        padding-inline: 1rem;
+      }
+
+      &--author {
+        display: flex;
+      }
+
+      &--share-menu {
+        border-radius: 0.625rem;
+        position: absolute;
+        top: 40%;
+        right: -7.45%;
+        border: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      }
+
+      &--share-menu::after{
+        content: "";
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #48556a;
+        border-width: 15px;
+        margin-left: -15px;
+      }
+
+      &--share-button-2 {
+        display: none;
+      }
+    }
+  }
+
+  .invert-btn-colour {
+    background-color: $pc-vd-des-dark-blue;
+  }
+
+  .invert-icon-colour {
+    filter: brightness(0) invert(1);
+  }
+}
