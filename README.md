@@ -21,6 +21,7 @@
 
 ![](./images/Thumbnail-Mobile-Active.jpeg)
 ![](./images/Thumbnail-Desktop-Active.jpeg)
+![](./images/image.png)
 
 ## My process
 
